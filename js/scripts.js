@@ -15,10 +15,18 @@ function send(){
   var valorLucro = (Number(valorVenda) - Number(custoReal));
   removeText.remove();
   income.remove();
+  percentOfSalePrice.remove();
+  tariff.remove();
+  productPrice.remove();
   txt.innerHTML = ("Custo Real: " + custoReal.toFixed(2)*(-1));
   txt2.innerHTML = ("Custo de Venda: " + valorVenda.toFixed(2)*(-1));
   txt3.innerHTML = ("Lucro: " + valorLucro.toFixed(2));
   txtBtn.innerHTML = ("Limpar")
   sndBtn.setAttribute("onclick", "window.location.reload(true)")
+  if(productPrice.value == 0 || Tariff.value == 0 || percentOfSalePrice.value == 0 || income.value == 0) {
+    txt.innerHTML = ("Um ou mais campos estão vazios, por favor, pereencha-os")
+    txt2.remove();
+    txt3.remove();
+  }
 }
 
