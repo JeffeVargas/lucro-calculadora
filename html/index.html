@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Lucro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="backgroundBody">
+    <div id="calculatorBody">
+        <div id="input">
+            <p id="text1">
+                Custo do Produto (R$)
+            </p>
+            <input type="text" alt="Custo do Produto" id="ProductPrice">
+            <p id="text2">
+                Tarifas do Produto (R$)
+            </p>
+            <input type="text" alt="Tarifas do Produto" id="Tariff">
+            <p id="text3">
+                Porcentagem sobre custo de venda (%)
+            </p>
+            <input type="text" alt="Porcentagem sobre o custo de venda" id="PercentOfSalePrice">
+            <p id="textIncome">
+                Procentagem de Lucro (%)
+            </p>
+            <input type="text" alt="Lucro" id="income">
+            
+            <div>
+                <button type="submit" onclick="send()" id="sendBtn"> Enviar </button>
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="../js/scripts.js"></script>
+</html>
