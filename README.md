@@ -21,7 +21,7 @@ There's no libraries used in this project, only default tags etc
 
 <h1 align=left> <b>Using mode:</b> </h1>
 
-<img src="./how-to-use.gif">
+<img src="./github/how-to-use.gif">
 
 > PT-BR Version
 > Versão PT-BR
@@ -36,12 +36,12 @@ Os dois primeiros, são inseridos a quantia em `R$ (BRL)`, já os dois últimos 
 
 <h1> <b> Custo do Produto </b> </h1>
   Esse é o preço que você paga originalmente pelo produto.
-  <img src="./productprice.gif">
+  <img src="./github/productprice.gif">
   No caso demonstrado, o preço do produto é de R$160
 
 <h1> <b> Tarifas do Produto e Porcentagem sobre o custo de venda </b> </h1>
 Essas tarifas são aplicadas pelo mercado sobre um tipo de produto, dependendo do mercado que você vende, muda-se a tarifa.
-<img src="./tariff.gif">
+<img src="./github/tariff.gif">
 No caso demonstrado, temos a tabela do Mercado Livre que apresenta a porcentagem sobre o seu produto e em baixo a tarifa do produto.
 
 <h1> <b> Porcentagem de Lucro </b> </h1>
