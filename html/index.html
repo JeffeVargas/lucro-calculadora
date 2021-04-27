@@ -10,23 +10,24 @@
 <body id="backgroundBody">
     <div id="calculatorBody">
         <div id="input">
-            <p id="text1">
-                Custo do Produto (R$)
-            </p>
-            <input type="text" alt="Custo do Produto" id="ProductPrice">
-            <p id="text2">
-                Tarifas do Produto (R$)
-            </p>
-            <input type="text" alt="Tarifas do Produto" id="Tariff">
-            <p id="text3">
-                Porcentagem sobre custo de venda (%)
-            </p>
-            <input type="text" alt="Porcentagem sobre o custo de venda" id="PercentOfSalePrice">
-            <p id="textIncome">
-                Procentagem de Lucro (%)
-            </p>
-            <input type="text" alt="Lucro" id="income">
-            
+            <form action="/action_page.php" autocomplete="off">
+                <p id="text1">
+                    Custo do Produto (R$)
+                </p>
+                <input type="text" alt="Custo do Produto" id="ProductPrice">
+                <p id="text2" autocomplete="off">
+                    Tarifas do Produto (R$)
+                </p>
+                <input type="text" alt="Tarifas do Produto" id="Tariff">
+                <p id="text3">
+                    Porcentagem sobre custo de venda (%)
+                </p>
+                <input type="text" alt="Porcentagem sobre o custo de venda" id="PercentOfSalePrice">
+                <p id="textIncome">
+                    Procentagem de Lucro (%)
+                </p>
+                <input type="text" alt="Lucro" id="income">
+            </form>
             <div>
                 <button onclick="send()" id="sendBtn"> <span id="txtBtn"> Calcular </span></button>
             </div>
