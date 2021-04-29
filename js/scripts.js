@@ -11,16 +11,16 @@ var txtBtn = document.querySelector("#txtBtn")
 
 function send(){
   var custoReal = ((Number(productPrice.value) + Number(tariff.value)) / (1 - Number(percentOfSalePrice.value)));
-  var valorVenda = ((Number(productPrice.value) + Number(tariff.value)) / (1 - Number(percentOfSalePrice.value) - Number(income.value) / 100));
-  var valorLucro = (Number(valorVenda) - Number(custoReal));
+  var valorVenda = ((Number(productPrice.value) + Number(tariff.value)) * (1 - Number(percentOfSalePrice.value) - Number(income.value) / 100));
+  var valorLucro = ((Number(valorVenda) - Number(custoReal))*(-1));
   removeText.remove();
   income.remove();
   percentOfSalePrice.remove();
   tariff.remove();
   productPrice.remove();
-  txt.innerHTML = ("Custo Real: " + custoReal.toFixed(2)*(-1));
-  txt2.innerHTML = ("Custo de Venda: " + valorVenda.toFixed(2)*(-1));
-  txt3.innerHTML = ("Lucro: " + valorLucro.toFixed(2));
+  txt.innerHTML = ("Custo Real: R$" + custoReal.toFixed(2)*(-1));
+  txt2.innerHTML = ("Custo de Venda: R$" + valorVenda.toFixed(2)*(-1));
+  txt3.innerHTML = ("Lucro: R$" + valorLucro.toFixed(2));
   txtBtn.innerHTML = ("Limpar")
   sndBtn.setAttribute("onclick", "window.location.reload(true)")
   if(productPrice.value == 0 || Tariff.value == 0 || percentOfSalePrice.value == 0 || income.value == 0) {
