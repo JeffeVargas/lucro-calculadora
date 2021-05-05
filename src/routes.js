@@ -1,8 +1,17 @@
 const express = require('express');
 const app = express();
-const calculadora = require('./routes/calculadora');
 const morgan = require('morgan');
+const path = require('path')
 const bodyParser = require('body-parser');
+
+app.use(express.static(path.join(__dirname, "..", "public")));
+app.set("views", path.join(__dirname, "..", "public"));
+app.engine("html", require("ejs").renderFile);
+app.set("view engine", "html");
+
+app.use('/', (req, res) => {
+    return res.render("../public/html/index.html")
+})
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -20,13 +29,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/calculadora', calculadora);
-
-app.use((req, res, next) => {
-    const erro = new Error('Não Encontrado');
-    erro.status = 404;
-    next(erro);
-});
 
 app.use((error, req, res, next) => {
     res.status(error.status || 500);
