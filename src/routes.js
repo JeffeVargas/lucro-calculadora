@@ -10,7 +10,15 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 
 app.use('/', (req, res) => {
-    return res.render("../public/html/index.html")
+    res.send({
+        mensagem: "A"
+    })
+})
+
+app.get('/', (req, res, next) => {
+    res.status(200).send({
+        mensagem: 'aaaaa'
+    })
 })
 
 app.use(morgan('dev'));
