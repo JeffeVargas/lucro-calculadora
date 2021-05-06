@@ -18,6 +18,8 @@ There's no libraries used in this project, only default tags etc
 1. Clone this repo using `git clone https://github.com/JeffeVargas/lucro-calculadora.git`
 
 2. Move yourself to appropriate directory: `cd lucro-calculadora`
+> If you want to see this application without download, access:
+`https://lucro-calculadora.herokuapp.com`
 
 <h1 align=left> <b>Using mode:</b> </h1>
 
@@ -25,6 +27,8 @@ There's no libraries used in this project, only default tags etc
 
 > PT-BR Version
 > Versão PT-BR
+
+> Se você deseja acessar este app sem fazer download: `https://lucro-calculadora.herokuapp.com`
 
 Em primeiro lugar, você precisa preencher os campos:
 - Custo do Produto;
