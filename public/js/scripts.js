@@ -11,7 +11,7 @@ var txtBtn = document.querySelector("#txtBtn")
 
 function send(){
   var custoReal = ((Number(productPrice.value) + Number(tariff.value)) / (1 - Number(percentOfSalePrice.value)));
-  var valorVenda = ((Number(productPrice.value) + Number(tariff.value)) * (1 - Number(percentOfSalePrice.value) - Number(income.value) / 100));
+  var valorVenda = ((Number(productPrice.value) + Number(tariff.value) + Number(income.value)) / (1 - Number(percentOfSalePrice.value) / 100));
   var valorLucro = ((Number(valorVenda) - Number(custoReal))*(-1));
   removeText.remove();
   income.remove();
